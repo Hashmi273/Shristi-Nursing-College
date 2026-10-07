@@ -104,7 +104,7 @@ export default function HomePage() {
             <div className="lg:col-span-6 flex justify-center">
               <div className="relative group max-w-sm rounded-2xl overflow-hidden shadow-2xl border-4 border-slate-200 bg-slate-900">
                 <img
-                  src="/shristi-poster.jpg"
+                  src={process.env.NODE_ENV === 'production' ? '/Shristi-Nursing-College/shristi-poster.jpg' : '/shristi-poster.jpg'}
                   alt="Shristi Group of Institutes Raipur Official Admission Poster"
                   className="w-full h-auto object-cover group-hover:scale-102 transition-transform duration-300"
                 />

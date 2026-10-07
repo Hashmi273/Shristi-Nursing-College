@@ -109,7 +109,7 @@ export default function Hero({ onOpenInquiry }) {
               {/* Nurse Card Container */}
               <div className="relative rounded-3xl overflow-hidden border-4 border-white bg-slate-900 shadow-2xl">
                 <img
-                  src="/nurse-hero.jpg"
+                  src={process.env.NODE_ENV === 'production' ? '/Shristi-Nursing-College/nurse-hero.jpg' : '/nurse-hero.jpg'}
                   alt="Professional Nurse - Shristi Nursing College Raipur"
                   className="w-full h-[400px] sm:h-[460px] object-cover object-top"
                 />
